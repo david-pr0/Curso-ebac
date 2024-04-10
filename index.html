@@ -4,96 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <title>Games shop - a sua loja de games</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+    <title>Exercicio HTML e JS</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Games Shop</h1>
-            <ul>
-                <li>
-                    <a href="#about">Sobre a loja</a>
-                </li>
-                <li>
-                    <a href="#contact">Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
     <main>
-        <section id="about">
-            <div class="container">
-                <img src="./img/loja.jpg" alt="Fachada da loja" />
-                <div id="content">
-                    <h2>Sobre a loja</h2>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere rerum est exercitationem illo laudantium impedit itaque dolorum incidunt debitis, neque voluptas nisi, nemo placeat sint ab laboriosam animi. Numquam, fugit?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum numquam esse perspiciatis recusandae molestias fugiat non placeat magnam suscipit doloremque earum corporis rem nemo, voluptatum, sit possimus distinctio tempore reprehenderit.
-                    </p>
-                    <ul>
-                        <li> <img src="./img/nintendo.png" alt="nintendo"/> </li>
-                        <li> <img src="./img/xbox.png" alt="xbox"/> </li>
-                        <li> <img src="./img/playstation.png" alt="playstation"/> </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="container">
-                <h2>Contato</h2>
-                <div class="contact">
-                    <div class="talk">
-                        <h3>Fale conosco</h3>
-                        <form>
-                            <input type="text" placeholder="Seu nome" required />
-                            <input type="email" placeholder="Seu email" required />
-                            <input type="tel" placeholder="Seu telefone (opcional)" />
-                            <textarea placeholder="Sua mensagem" required></textarea>
-                            <button type="submit">Enviar</button>
-                        </form>
-                    </div>
-                    <div class="follow">
-                        <h3>Nos acompanhe</h3>
-                        <ul class="social-links">
-                            <li>
-                                <a href="#" title="Nos siga no instagram">
-                                    <img src="./img/instagram.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="Nos siga no Facebook">
-                                    <img src="./img/facebook.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="Visite nosso canal no Youtube">
-                                    <img src="./img/youtube.png">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="address">
-                        <h3>Venha até nós</h3>
-                        <p>
-                            Rua JavaScript n°124, Vila HTML - São Paulo - SP
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <h1>Validando o formulário</h1>
+        <form class="formulario">
+            <input type="number" placeholder="Digite o primeiro número" id="numero1">
+            <input type="number" placeholder="Digite um número maior que o primeiro" id="numero2">
+            <button type="submit" id="btn">Validar formulário</button>
+        </form>
+        <p class="valido">Formulário válido</p>
+        <p class="invalido">Formulário inválido</p>
     </main>
-    <footer>
-        <div class="container">
-            <p>
-                &copy; Games Shop - Todos os direitos reservados - 2024
-            </p>
-        </div>
-    </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
