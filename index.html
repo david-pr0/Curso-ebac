@@ -4,19 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <title>Exercicio HTML e JS</title>
+    <title>Agenda de contatos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <h1>Validando o formulário</h1>
-        <form class="formulario">
-            <input type="number" placeholder="Digite o primeiro número" id="numero1">
-            <input type="number" placeholder="Digite um número maior que o primeiro" id="numero2">
-            <button type="submit" id="btn">Validar formulário</button>
-        </form>
-        <p class="valido">Formulário válido</p>
-        <p class="invalido">Formulário inválido</p>
-    </main>
+        <header>
+            <div class="container">
+                <h1>Cadastre seus contatos</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <form class="form">
+                    <input type="text" placeholder="Digite o nome do contato" required id="nome">
+                    <input type="tel" placeholder="Digite o telefone do contato (somente números)" required id="telefone"> <br>
+                    <button type="submit" id="btn">Adicionar +</button>
+                    <button type="reset">Limpar</button>
+                </form>
+                <table class="table" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Contato</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <p>
+                    &copy; Todos os direitos reservados - 2024
+                </p>
+            </div>
+        </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>
