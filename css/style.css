@@ -9,6 +9,12 @@ body {
     background-color: #eeebc188;
 }
 
+.container {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 h1 {
     font-family: "Konkhmer Sleokchher", system-ui;
 }
@@ -23,9 +29,12 @@ header {
 .form {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 32px 0;
+}
+
+.form * {
+    margin-right: 20px;
 }
 
 .form input {
@@ -39,38 +48,28 @@ header {
     height: 50px;
     padding: 8px;
     font-size: 24px;
-    background-color: red;
+    background-color: #37b147;
     border: none;
     color: #fff;
     cursor: pointer;
 }
 
-#btn {
-    background-color: #37b147;
-}
-
-.table {
-    width: 100%;
-}
-
-.table th {
-    border: 1px solid black;
-    padding: 16px;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #84e6f7bb;
-}
-
-.table td {
+#ul {
     text-align: center;
-    font-size: 18px;
-    padding: 16px 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #f7f6f6;
+    padding: 32px ;
+    display: none;
 }
 
-.container {
-    max-width: 1360px;
-    width: 100%;
-    margin: 0 auto;
+#ul li {
+    padding: 5px 0;
+    margin: 3px 0;
+    font-size: 24px;
+    border-bottom: 1px solid rgba( 0, 0, 0, 0.1);
+    background-color: #bbc2c4;
+    cursor: pointer;
+    display: none;
+}
+
+.pronto {
+    text-decoration: line-through;
 }

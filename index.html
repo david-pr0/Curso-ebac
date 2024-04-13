@@ -3,46 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício jquery</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <title>Agenda de contatos</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-        <header>
-            <div class="container">
-                <h1>Cadastre seus contatos</h1>
-            </div>
-        </header>
-        <main>
-            <div class="container">
-                <form class="form">
-                    <input type="text" placeholder="Digite o nome do contato" required id="nome">
-                    <input type="tel" placeholder="Digite o telefone do contato (somente números)" required id="telefone"> <br>
-                    <button type="submit" id="btn">Adicionar +</button>
-                    <button type="reset">Limpar</button>
-                </form>
-                <table class="table" cellspacing="0">
-                    <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Contato</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-            </div>
-        </main>
-        <footer>
-            <div class="container">
-                <p>
-                    &copy; Todos os direitos reservados - 2024
-                </p>
-            </div>
-        </footer>
+    <header>
+        <div class="container">
+            <h1>Cadastre suas Tarefas</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form class="form">
+                <input type="text" placeholder="Digite o nome da tarefa" required id="tarefa">
+                <button type="submit" id="btn">Adicionar +</button>
+            </form>
+            <ul id="ul">
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Todos os direitos reservados - 2024
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
