@@ -1,0 +1,17 @@
+.container {
+    width: 1024px;
+    padding: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin: 15% 25%;
+}
+
+.form .btn {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.titulo {
+    border-bottom: 2px solid;
+    margin-bottom: 8px;
+}
