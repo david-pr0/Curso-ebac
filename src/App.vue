@@ -1,47 +1,55 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { reactive } from 'vue';
+import Form from './components/Form.vue';
+import Header from './components/Header.vue';
+
+  const estado = reactive({
+    operacao: 'soma',
+    num1: 0,
+    num2: 0,
+    resultado: '',
+  });
+
+
+  function multiplicacao(a, b) {
+    estado.resultado = a * b;
+    return estado.resultado;
+  };
+  function soma(a, b) {
+    estado.resultado = a + b;
+    return estado.resultado;
+  };
+  function subtracao(a, b) {
+    estado.resultado = a - b;
+    return estado.resultado;
+  };
+  function divisao(a, b) {
+    estado.resultado = a / b;
+    return estado.resultado;
+  };
+
+
+  function operacao() {
+    switch (estado.operacao) {
+      case 'soma' :
+        return soma(estado.num1, estado.num2)
+      case 'subtracao' :
+        return subtracao(estado.num1, estado.num2)
+      case 'multiplicacao' :
+        return multiplicacao(estado.num1, estado.num2)
+      case 'divisao' :
+        return divisao(estado.num1, estado.num2)
+    }
+  }
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="container">
+    <Header />
+    <Form :operacao="operacao()" :estado="estado" />
+  </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
