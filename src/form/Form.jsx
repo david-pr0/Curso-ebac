@@ -19,11 +19,11 @@ function Form() {
         <>
             <form className={styles.form} onSubmit={e => calculo(e, altura, peso)}>
                 <div className={styles.formItem}>
-                    <label htmlFor="altura">Digite a sua altura em Cm: </label>
+                    <label htmlFor="altura">Digite a sua altura (Cm): </label>
                     <input type="number" step="0.1" required name="altura" id="altura" onBlur={e => setAltura(parseFloat(e.target.value))} />
                 </div>
                 <div className={styles.formItem}>
-                    <label htmlFor="peso">Digite o seu peso: </label>
+                    <label htmlFor="peso">Digite o seu peso (Kg): </label>
                     <input type="number" step="0.1" required name="peso" id="peso" onBlur={e => setPeso(parseFloat(e.target.value))} />
                 </div>
                 <button type="submit" className={styles.button}>Enviar</button>
